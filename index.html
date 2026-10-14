@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAS Family Salon Bhopal | 4.8★ Hair & Beauty Salon in Minal Shopping St</title>
+  <meta name="description" content="DAS Family Salon is Bhopal's premier 4.8★ family salon in Minal Shopping St, Ayodhya Nagar. Professional haircuts, hair spa, straightening, facials, and painless waxing for Men, Women & Kids. Open daily till 10 PM. Call 083490 82121.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0c0e12] text-gray-100 antialiased selection:bg-amber-500 selection:text-black">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-amber-900/40 via-amber-800/30 to-amber-900/40 border-b border-amber-500/20 py-2 px-4 text-xs font-medium text-amber-200">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center bg-amber-500 text-black font-extrabold text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wider">Special</span>
+        <span>Monthly Festive & Grooming Offers Live at Minal Shopping St, Bhopal</span>
+      </div>
+      <div class="flex items-center gap-4 text-gray-300">
+        <a href="tel:08349082121" class="hover:text-amber-300 flex items-center gap-1 transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>083490 82121</span>
+        </a>
+        <span class="text-white/20">|</span>
+        <span class="flex items-center gap-1 text-gray-400">
+          <i data-lucide="clock" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Open 9:00 AM – 10:00 PM Daily</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="sticky top-0 z-40 bg-[#0c0e12]/90 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-400 to-amber-700 flex items-center justify-center text-black font-extrabold shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+          <i data-lucide="scissors" class="w-5 h-5 text-black transform -rotate-45"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-xl sm:text-2xl font-extrabold font-serif-luxury tracking-wide text-white">DAS</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 font-semibold border border-amber-500/20 uppercase tracking-wider">Family Salon</span>
+          </div>
+          <p class="text-[11px] text-gray-400 tracking-wider">Minal Shopping St · Ayodhya Nagar, Bhopal</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+        <a href="#services" class="hover:text-amber-300 transition-colors">Services & Prices</a>
+        <a href="#family" class="hover:text-amber-300 transition-colors">Family Care</a>
+        <a href="#monthly-offer" class="hover:text-amber-300 transition-colors">Monthly Special</a>
+        <a href="#reviews" class="hover:text-amber-300 transition-colors">Client Reviews</a>
+        <a href="#contact" class="hover:text-amber-300 transition-colors">Location</a>
+      </nav>
+
+      <!-- Right Actions & Live Status -->
+      <div class="flex items-center gap-3">
+        <!-- Live Status Pill -->
+        <div id="liveStatusIndicator" class="hidden lg:flex items-center px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
+          <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 pulse-emerald mr-2"></span>
+          <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wide">Open Now</span>
+          <span class="text-gray-400 text-xs ml-1">· Till 10:00 PM</span>
+        </div>
+
+        <button onclick="openBookingModal()" class="gold-btn px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 shadow-lg">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Book Slot</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden">
+    <!-- Ambient Backdrop Glow -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-amber-600/15 rounded-full blur-[130px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <!-- Top Trust Badge -->
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20">
+            <div class="flex text-amber-400">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+            </div>
+            <span class="text-xs font-semibold text-amber-200">4.8 Rating (110+ Google Reviews) in Bhopal</span>
+          </div>
+
+          <!-- Hero Heading -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold font-serif-luxury tracking-tight leading-tight text-white">
+            Elevated Hair & Beauty Care for the <span class="gold-gradient-text">Entire Family</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="text-gray-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+            Experience friendly, hygienic, and relaxing salon services at <strong class="text-white">DAS Family Salon</strong>. From trendy haircuts and deep nourishing hair spas to glowing facial therapies, smooth painless waxing, and kids' grooming — in the heart of Minal Shopping St, Ayodhya Nagar.
+          </p>
+
+          <!-- Real-Time Hours Status -->
+          <div id="heroTimingBadge" class="inline-flex items-center px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs text-gray-300">
+            <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 pulse-emerald mr-2"></span>
+            <span>OPEN TODAY UNTIL 10:00 PM IST (Late Night Care Available)</span>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <button onclick="openBookingModal()" class="gold-btn px-6 py-3.5 rounded-xl text-sm font-bold flex items-center gap-2">
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+              <span>Book Appointment Online</span>
+            </button>
+            <a href="tel:08349082121" class="gold-btn-outline px-6 py-3.5 rounded-xl text-sm font-semibold flex items-center gap-2">
+              <i data-lucide="phone-call" class="w-4 h-4 text-amber-400"></i>
+              <span>Call 083490 82121</span>
+            </a>
+          </div>
+
+          <!-- Quick Trust Metrics -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 max-w-lg">
+            <div>
+              <div class="text-2xl font-extrabold text-amber-300">4.8 ★</div>
+              <div class="text-xs text-gray-400">110+ Verified Reviews</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-white">3-in-1</div>
+              <div class="text-xs text-gray-400">Men, Women & Kids</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-white">10 PM</div>
+              <div class="text-xs text-gray-400">Late Night Hours</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Card -->
+        <div class="lg:col-span-5">
+          <div class="relative">
+            <!-- Card Decoration -->
+            <div class="absolute -inset-1 bg-gradient-to-r from-amber-500 to-amber-700 rounded-3xl blur opacity-25"></div>
+
+            <div class="relative glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">
+              <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                <div>
+                  <span class="text-[11px] font-bold text-amber-400 uppercase tracking-widest block">Salon Highlights</span>
+                  <h3 class="text-lg font-bold text-white">Why Families Love DAS</h3>
+                </div>
+                <div class="w-9 h-9 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-400">
+                  <i data-lucide="sparkles" class="w-5 h-5"></i>
+                </div>
+              </div>
+
+              <!-- Feature Bullet 1 -->
+              <div class="flex items-start gap-3.5">
+                <div class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-amber-400 shrink-0 mt-0.5">
+                  <i data-lucide="users" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-semibold text-white">Complete Family Care</h4>
+                  <p class="text-xs text-gray-400 leading-relaxed">Dedicated expert stylists for men's grooming, women's advanced styling, and patient, caring cuts for children.</p>
+                </div>
+              </div>
+
+              <!-- Feature Bullet 2 -->
+              <div class="flex items-start gap-3.5">
+                <div class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-amber-400 shrink-0 mt-0.5">
+                  <i data-lucide="shield-check" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-semibold text-white">Safe Hair Straightening & Spa</h4>
+                  <p class="text-xs text-gray-400 leading-relaxed">Zero-damage straightening, smoothing, and L'Oréal protein spas designed to nourish and protect hair vitality.</p>
+                </div>
+              </div>
+
+              <!-- Feature Bullet 3 -->
+              <div class="flex items-start gap-3.5">
+                <div class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-amber-400 shrink-0 mt-0.5">
+                  <i data-lucide="feather" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-semibold text-white">Smooth, Painless Waxing</h4>
+                  <p class="text-xs text-gray-400 leading-relaxed">Hygienic single-use applicators and premium waxes that dispel common myths, leaving skin silky and soft.</p>
+                </div>
+              </div>
+
+              <!-- Feature Bullet 4 -->
+              <div class="flex items-start gap-3.5">
+                <div class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-amber-400 shrink-0 mt-0.5">
+                  <i data-lucide="award" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-semibold text-white">Expert Staff (Minakshi & Senior Team)</h4>
+                  <p class="text-xs text-gray-400 leading-relaxed">Frequently commended by clients for warm hospitality, personalized skin cleanups, and meticulous haircuts.</p>
+                </div>
+              </div>
+
+              <!-- Quick CTA banner inside card -->
+              <div class="bg-gradient-to-r from-amber-500/20 via-amber-500/10 to-transparent p-3.5 rounded-xl border border-amber-500/30 flex items-center justify-between">
+                <div>
+                  <span class="text-xs font-bold text-white block">Walk-ins & Bookings Welcome</span>
+                  <span class="text-[11px] text-gray-300">Fast confirmation via WhatsApp</span>
+                </div>
+                <button onclick="openBookingModal()" class="px-3.5 py-1.5 rounded-lg bg-amber-400 text-black text-xs font-bold hover:bg-amber-300 transition-colors">
+                  Book Slot
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Family Pillars Section -->
+  <section id="family" class="py-16 bg-[#11141b] border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold text-amber-400 tracking-widest uppercase">One Destination for Everyone</span>
+        <h2 class="text-2xl sm:text-4xl font-bold font-serif-luxury text-white mt-1">Tailored Grooming for Every Member</h2>
+        <p class="text-xs sm:text-sm text-gray-400 mt-2">No need to visit multiple salons. Enjoy premium care for men, women, and children under one welcoming roof.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Men Pillar -->
+        <div class="glass-panel rounded-2xl p-6 border border-white/10 hover:border-amber-500/40 transition-colors relative group">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i data-lucide="user" class="w-6 h-6"></i>
+          </div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-amber-400">Gentlemen</span>
+          <h3 class="text-xl font-bold text-white mt-1 mb-2">Men's Styling & Grooming</h3>
+          <p class="text-xs text-gray-300 leading-relaxed mb-4">Sharp skin fades, textured scissor cuts, beard shaping with hot steam towels, head massage, and anti-pollution facial cleanups.</p>
+          <ul class="space-y-1.5 text-xs text-gray-400">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Beard Shaping & Contouring</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Executive Men's Grooming Combos</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Scalp Massage & D-Tan Therapy</li>
+          </ul>
+        </div>
+
+        <!-- Women Pillar -->
+        <div class="glass-panel rounded-2xl p-6 border border-white/10 hover:border-amber-500/40 transition-colors relative group">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i data-lucide="sparkle" class="w-6 h-6"></i>
+          </div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-amber-400">Ladies</span>
+          <h3 class="text-xl font-bold text-white mt-1 mb-2">Women's Hair & Beauty</h3>
+          <p class="text-xs text-gray-300 leading-relaxed mb-4">Designer haircuts, keratin smoothening, safe straightening, L'Oréal spa rituals, instant fruit cleanups, diamond facials, and painless waxing.</p>
+          <ul class="space-y-1.5 text-xs text-gray-400">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Safe Straightening & Smoothening</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Radiant Facials & De-Tan Therapy</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Hygienic Waxing & Threading</li>
+          </ul>
+        </div>
+
+        <!-- Kids Pillar -->
+        <div class="glass-panel rounded-2xl p-6 border border-white/10 hover:border-amber-500/40 transition-colors relative group">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i data-lucide="smile" class="w-6 h-6"></i>
+          </div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-amber-400">Kids & Teens</span>
+          <h3 class="text-xl font-bold text-white mt-1 mb-2">Gentle & Patient Haircuts</h3>
+          <p class="text-xs text-gray-300 leading-relaxed mb-4">A fun, fear-free environment where stylists take extra care with little ones. Fast, painless haircuts with lots of patience and smiles.</p>
+          <ul class="space-y-1.5 text-xs text-gray-400">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Safe, rounded-tip sanitized tools</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Warm & friendly atmosphere</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Trendy school & festive cuts</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Services & Pricing Section -->
+  <section id="services" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div>
+          <span class="text-xs font-bold text-amber-400 tracking-widest uppercase">Transparent Menu</span>
+          <h2 class="text-2xl sm:text-4xl font-bold font-serif-luxury text-white mt-1">Salon Services & Pricing</h2>
+          <p class="text-xs sm:text-sm text-gray-400 mt-2">Select a category below to explore our complete offerings with honest rates.</p>
+        </div>
+
+        <!-- Filter Tab Buttons -->
+        <div class="flex flex-wrap gap-2">
+          <button class="filter-tab active px-3.5 py-1.5 rounded-xl text-xs font-semibold border border-white/10 bg-white/5 text-gray-300" data-category="all">
+            All Services
+          </button>
+          <button class="filter-tab px-3.5 py-1.5 rounded-xl text-xs font-semibold border border-white/10 bg-white/5 text-gray-300" data-category="hair">
+            Haircuts & Styling
+          </button>
+          <button class="filter-tab px-3.5 py-1.5 rounded-xl text-xs font-semibold border border-white/10 bg-white/5 text-gray-300" data-category="spa">
+            Hair Spa & Treatments
+          </button>
+          <button class="filter-tab px-3.5 py-1.5 rounded-xl text-xs font-semibold border border-white/10 bg-white/5 text-gray-300" data-category="facial">
+            Facials & Cleanups
+          </button>
+          <button class="filter-tab px-3.5 py-1.5 rounded-xl text-xs font-semibold border border-white/10 bg-white/5 text-gray-300" data-category="waxing">
+            Waxing & Skin
+          </button>
+          <button class="filter-tab px-3.5 py-1.5 rounded-xl text-xs font-semibold border border-white/10 bg-white/5 text-gray-300" data-category="combos">
+            Value Combos
+          </button>
+        </div>
+      </div>
+
+      <!-- Services Grid (Populated dynamically by app.js) -->
+      <div id="servicesContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered via app.js -->
+      </div>
+
+      <!-- Note on Consultation -->
+      <div class="mt-10 p-4 rounded-2xl glass-panel border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0">
+            <i data-lucide="help-circle" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold text-white">Unsure which treatment fits your hair or skin type?</h4>
+            <p class="text-xs text-gray-400">Our senior stylists provide free 5-minute consultations at the desk.</p>
+          </div>
+        </div>
+        <button onclick="openBookingModal('Complimentary Hair & Skin Consultation')" class="px-4 py-2 rounded-xl gold-btn-outline text-xs font-bold whitespace-nowrap">
+          Request Consultation
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Monthly Special Offer Spotlight (From Google business post) -->
+  <section id="monthly-offer" class="py-16 bg-gradient-to-b from-[#11141b] to-[#0c0e12] border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative glass-panel-gold rounded-3xl p-8 sm:p-12 overflow-hidden border border-amber-500/30">
+        
+        <!-- Decorative Background Element -->
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+          <div class="lg:col-span-8 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-bold border border-amber-500/30">
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>OFFER OF THE MONTH AT MINAL</span>
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-bold font-serif-luxury text-white">
+              The Signature Rejuvenation Package
+            </h2>
+            <p class="text-gray-300 text-xs sm:text-sm leading-relaxed max-w-2xl">
+              Curious about how facial treatments and deep conditioning can refresh your look? Get our complete glow therapy package including <strong>Designer Haircut + Deep Nourishing Hair Spa + Herbal Refresh Cleanup + Eyebrow/Beard Styling</strong> at special package pricing.
+            </p>
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <div class="flex items-baseline gap-2">
+                <span class="text-3xl font-extrabold text-amber-300">₹999</span>
+                <span class="text-sm line-through text-gray-500">₹1,550</span>
+                <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30">Save 35%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
+            <button onclick="openBookingModal('Monthly Signature Rejuvenation Package (₹999)')" class="w-full py-3.5 px-6 rounded-xl gold-btn text-sm font-bold flex items-center justify-center gap-2 shadow-xl">
+              <i data-lucide="check-circle" class="w-4 h-4"></i>
+              <span>Claim Offer via WhatsApp</span>
+            </button>
+            <a href="tel:08349082121" class="w-full py-3 px-6 rounded-xl gold-btn-outline text-xs font-semibold flex items-center justify-center gap-2 text-center">
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400"></i>
+              <span>Call Salon: 083490 82121</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Verified Client Reviews Section -->
+  <section id="reviews" class="py-20 bg-[#0c0e12]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-1 text-amber-400 mb-2">
+          <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+        </div>
+        <span class="text-xs font-bold text-amber-400 tracking-widest uppercase block">Verified Google Feedback</span>
+        <h2 class="text-2xl sm:text-4xl font-bold font-serif-luxury text-white mt-1">What Our Clients Say</h2>
+        <p class="text-xs sm:text-sm text-gray-400 mt-2">Over 110 real reviews from Bhopal residents visiting our Minal Shopping St branch.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="glass-panel rounded-2xl p-6 border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 gap-1 mb-3">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-300 leading-relaxed italic mb-6">
+              "It was an amazing experience here. Friendly environment, I really like their service! Highly recommended for family haircuts and peaceful grooming."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+            <div class="w-9 h-9 rounded-full bg-amber-500/20 text-amber-300 font-bold flex items-center justify-center text-xs">
+              R
+            </div>
+            <div>
+              <div class="text-xs font-bold text-white">Google Reviewer</div>
+              <div class="text-[10px] text-gray-400">Verified Client · Bhopal</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="glass-panel rounded-2xl p-6 border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 gap-1 mb-3">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-300 leading-relaxed italic mb-6">
+              "My skin felt fresh after the cleanup and I’m really happy with my haircut. The stylists take their time and don't rush through the appointment."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+            <div class="w-9 h-9 rounded-full bg-amber-500/20 text-amber-300 font-bold flex items-center justify-center text-xs">
+              P
+            </div>
+            <div>
+              <div class="text-xs font-bold text-white">Pooja S.</div>
+              <div class="text-[10px] text-gray-400">Cleanup & Haircut Client</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="glass-panel rounded-2xl p-6 border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 gap-1 mb-3">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-300 leading-relaxed italic mb-6">
+              "One of the staff Minakshi is very good at her work. She made sure I was comfortable throughout the waxing and facial service. Very professional."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+            <div class="w-9 h-9 rounded-full bg-amber-500/20 text-amber-300 font-bold flex items-center justify-center text-xs">
+              M
+            </div>
+            <div>
+              <div class="text-xs font-bold text-white">Ananya M.</div>
+              <div class="text-[10px] text-gray-400">Regular Client · Minal Residency</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours Section -->
+  <section id="contact" class="py-16 bg-[#11141b] border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Address & Contact Info -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-xs font-bold text-amber-400 tracking-widest uppercase">Visit DAS Family Salon</span>
+            <h2 class="text-2xl sm:text-3xl font-bold font-serif-luxury text-white mt-1">Prime Location in Bhopal</h2>
+            <p class="text-xs sm:text-sm text-gray-400 mt-2">Conveniently situated in Minal Shopping Street with ample parking and accessibility.</p>
+          </div>
+
+          <!-- Info Cards -->
+          <div class="space-y-4">
+            <!-- Address Card -->
+            <div class="glass-panel p-4 rounded-xl border border-white/10 flex items-start gap-3.5">
+              <div class="w-9 h-9 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <span class="text-xs text-gray-400 block uppercase tracking-wider">Address</span>
+                <p class="text-xs sm:text-sm font-semibold text-white leading-relaxed">
+                  Minal Shopping St, Narela Shankri, Ayodhya Nagar, Bhopal, Madhya Pradesh 462023
+                </p>
+              </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="glass-panel p-4 rounded-xl border border-white/10 flex items-start gap-3.5">
+              <div class="w-9 h-9 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <span class="text-xs text-gray-400 block uppercase tracking-wider">Contact Phone</span>
+                <a href="tel:08349082121" class="text-sm sm:text-base font-bold text-amber-300 hover:underline">
+                  083490 82121 / +91 83490 82121
+                </a>
+              </div>
+            </div>
+
+            <!-- Hours Card -->
+            <div class="glass-panel p-4 rounded-xl border border-white/10 flex items-start gap-3.5">
+              <div class="w-9 h-9 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="clock" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <span class="text-xs text-gray-400 block uppercase tracking-wider">Operating Hours</span>
+                <p class="text-xs sm:text-sm font-semibold text-white">
+                  Monday – Sunday: 9:00 AM – 10:00 PM
+                </p>
+                <span class="text-[11px] text-emerald-400 font-medium">Open continuous 13 hours daily</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="flex flex-wrap gap-3">
+            <a href="https://maps.google.com/?q=DAS+Family+Salon+Minal+Shopping+St+Bhopal" target="_blank" rel="noopener noreferrer" 
+               class="gold-btn px-5 py-3 rounded-xl text-xs font-bold flex items-center gap-2">
+              <i data-lucide="navigation" class="w-4 h-4"></i>
+              <span>Get Google Maps Directions</span>
+            </a>
+            <button onclick="openBookingModal()" class="gold-btn-outline px-5 py-3 rounded-xl text-xs font-bold flex items-center gap-2">
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+              <span>Reserve Slot</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="lg:col-span-7 h-[360px] rounded-2xl overflow-hidden glass-panel border border-white/10 relative shadow-2xl">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.267718911244!2d77.45892557597148!3d23.269784307044037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c6957dc6263e3%3A0xbcf2cb18274d5acf!2sDAS%20Family%20Salon!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style="border:0; filter: contrast(1.05) brightness(0.9);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="DAS Family Salon Bhopal Location">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 bg-[#08090c] border-t border-white/5 text-xs text-gray-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="font-serif-luxury font-bold text-white text-sm">DAS Family Salon</span>
+        <span class="text-white/20">·</span>
+        <span>Minal Shopping St, Ayodhya Nagar, Bhopal (MP)</span>
+      </div>
+      <div>
+        <span>Call: <a href="tel:08349082121" class="text-amber-400 hover:underline">083490 82121</a> · Open Till 10:00 PM Daily</span>
+      </div>
+      <div class="text-gray-400 text-[11px]">
+        © 2026 DAS Family Salon. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Quick Action Dock -->
+  <div class="lg:hidden fixed bottom-4 left-4 right-4 z-40 bg-[#151820]/95 backdrop-blur-lg border border-amber-500/30 rounded-2xl p-2 shadow-2xl flex items-center justify-around">
+    <a href="tel:08349082121" class="flex flex-col items-center gap-1 text-gray-300 hover:text-amber-400 px-3 py-1">
+      <i data-lucide="phone" class="w-4 h-4 text-amber-400"></i>
+      <span class="text-[10px] font-semibold">Call Now</span>
+    </a>
+    <button onclick="openBookingModal()" class="flex items-center gap-1.5 gold-btn px-4 py-2 rounded-xl text-xs font-bold">
+      <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+      <span>Book Slot</span>
+    </button>
+    <a href="https://maps.google.com/?q=DAS+Family+Salon+Minal+Shopping+St+Bhopal" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-1 text-gray-300 hover:text-amber-400 px-3 py-1">
+      <i data-lucide="map-pin" class="w-4 h-4 text-amber-400"></i>
+      <span class="text-[10px] font-semibold">Map</span>
+    </a>
+  </div>
+
+  <!-- BOOKING MODAL (Strictly hidden by default with .custom-modal-backdrop) -->
+  <div id="bookingModal" class="custom-modal-backdrop fixed inset-0 z-50 bg-black/80 backdrop-blur-sm p-4 overflow-y-auto items-center justify-center">
+    <div class="relative w-full max-w-lg glass-panel-gold rounded-3xl p-6 sm:p-8 border border-amber-500/40 shadow-2xl my-8">
+      
+      <!-- Close Button -->
+      <button onclick="closeBookingModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-gray-300 flex items-center justify-center transition-colors">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <!-- Modal Title -->
+      <div class="mb-6">
+        <span class="text-xs font-bold text-amber-400 uppercase tracking-widest block">Instant Booking</span>
+        <h3 class="text-2xl font-serif-luxury font-bold text-white mt-1">Reserve Your Salon Appointment</h3>
+        <p class="text-xs text-gray-400 mt-1">Directly confirms with salon desk via WhatsApp (+91 83490 82121)</p>
+      </div>
+
+      <!-- Booking Form -->
+      <form id="bookingForm" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-gray-300 mb-1">Your Full Name *</label>
+          <input type="text" id="modalNameInput" required placeholder="e.g. Rahul Sharma" 
+                 class="w-full px-3.5 py-2.5 rounded-xl bg-black/50 border border-white/10 text-white text-xs focus:outline-none focus:border-amber-400">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-gray-300 mb-1">Phone Number (WhatsApp) *</label>
+          <input type="tel" id="modalPhoneInput" required placeholder="e.g. 98765 43210" 
+                 class="w-full px-3.5 py-2.5 rounded-xl bg-black/50 border border-white/10 text-white text-xs focus:outline-none focus:border-amber-400">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-gray-300 mb-1">Selected Service / Package *</label>
+          <input type="text" id="modalServiceInput" required placeholder="e.g. Men's Signature Haircut, Hair Spa, Facial" 
+                 class="w-full px-3.5 py-2.5 rounded-xl bg-black/50 border border-white/10 text-white text-xs focus:outline-none focus:border-amber-400">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-gray-300 mb-1">Preferred Date</label>
+            <input type="date" id="modalDateInput" 
+                   class="w-full px-3.5 py-2.5 rounded-xl bg-black/50 border border-white/10 text-white text-xs focus:outline-none focus:border-amber-400">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-300 mb-1">Preferred Time Slot</label>
+            <select id="modalTimeInput" class="w-full px-3.5 py-2.5 rounded-xl bg-black/50 border border-white/10 text-white text-xs focus:outline-none focus:border-amber-400">
+              <option value="Morning (9:00 AM - 12:00 PM)">Morning (9 AM - 12 PM)</option>
+              <option value="Afternoon (12:00 PM - 4:00 PM)">Afternoon (12 PM - 4 PM)</option>
+              <option value="Evening (4:00 PM - 7:00 PM)">Evening (4 PM - 7 PM)</option>
+              <option value="Late Night (7:00 PM - 10:00 PM)">Late Night (7 PM - 10 PM)</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-gray-300 mb-1">Stylist / Preference</label>
+          <select id="modalStylistInput" class="w-full px-3.5 py-2.5 rounded-xl bg-black/50 border border-white/10 text-white text-xs focus:outline-none focus:border-amber-400">
+            <option value="Any Available Senior Stylist">Any Available Senior Stylist</option>
+            <option value="Minakshi (Recommended in Reviews)">Minakshi (Staff Recommendation)</option>
+            <option value="Hair Spa & Straightening Specialist">Hair Spa & Straightening Specialist</option>
+            <option value="Facial & Waxing Expert">Facial & Waxing Expert</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-gray-300 mb-1">Special Notes / Family Members</label>
+          <input type="text" id="modalNotesInput" placeholder="e.g. Booking for 2 persons, sensitive skin, etc." 
+                 class="w-full px-3.5 py-2.5 rounded-xl bg-black/50 border border-white/10 text-white text-xs focus:outline-none focus:border-amber-400">
+        </div>
+
+        <button type="submit" class="w-full py-3.5 px-4 rounded-xl gold-btn text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg mt-2">
+          <i data-lucide="check" class="w-4 h-4"></i>
+          <span>Continue to WhatsApp Confirmation</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- INSTANT CONFIRMATION TICKET MODAL -->
+  <div id="confirmationModal" class="custom-modal-backdrop fixed inset-0 z-50 bg-black/85 backdrop-blur-md p-4 overflow-y-auto items-center justify-center">
+    <div class="relative w-full max-w-md glass-panel-gold rounded-3xl p-6 sm:p-8 border border-amber-500/50 shadow-2xl my-8">
+      <button onclick="closeConfirmationModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-gray-300 flex items-center justify-center">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <div id="confirmationContent">
+        <!-- Injected by app.js showConfirmationTicket() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
